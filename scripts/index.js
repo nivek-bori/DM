@@ -13,6 +13,8 @@ const address = document.getElementById("search");
 const searchEngine = document.getElementById("searchengine");
 
 form.addEventListener("keydown", function(event) => {
+  console.log(event.key);
+  console.log(event.keyCode);
   if (event.key != "enter" && event.keyCode != 13) {return}
   event.preventDefault();
   try {
