@@ -132,13 +132,12 @@ function get_cookie(cookie_name) { const value = "; " + document.cookie; const p
           frame.src=get_cookie("location");
   }
         
-
-  fsbutton.style.top=(document.getElementsByClassName("navbar")[0].offsetHeight-16)+"px";
+  fsbutton.style.position = "fixed";
+  fsbutton.style.top = "0";
+  fsbutton.style.left = "50%";
+  fsbutton.style.transform = "translateX(-50%)";
   
   frame.style.height=(window.innerHeight-document.getElementsByClassName("navbar")[0].offsetHeight+5)+"px";
-
-fsbutton.style.width=(fsbutton.offsetWidth+17)+"px";
-fsbutton.style.left=(window.innerWidth/2-fsbutton.offsetWidth/2+5)+"px";
                   
   function fullscreen(){
     if (frame.requestFullscreen) {
