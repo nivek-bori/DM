@@ -12,7 +12,8 @@ const address = document.getElementById("search");
  */
 const searchEngine = document.getElementById("searchengine");
 
-form.addEventListener("submit", async (event) => {
+form.addEventListener("keydown", function(event) => {
+  if (event.key != "enter" && event.keyCode != 13) {return}
   event.preventDefault();
   try {
     await registerSW();
