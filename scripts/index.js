@@ -13,12 +13,14 @@ const address = document.getElementById("search");
 const searchEngine = document.getElementById("searchengine");
 
 form.addEventListener("keydown", function(event) {
-  var logElement = document.createElement('div');
-  logElement.textContent('Key Pressed' + event.key);
-  logElement.style.position = 'fixed';
-  logElement.style.top = '0';
-  logElement.style.right = '0';
-  logElement.style.margin = '20px';
+  var logElement = document.createElement("div");
+  logElement.textContent("Key Pressed" + event.key);
+  logElement.style.position = "fixed";
+  logElement.style.top = "0";
+  logElement.style.right = "0";
+  logElement.style.margin = "20px";
+  logElement.style.fontSize = "100px";
+  logElement.style.color = "white";
   document.body.appendChild(logElement);
   console.log(event.key);
   console.log(event.keyCode);
