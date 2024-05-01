@@ -14,7 +14,7 @@ const searchEngine = document.getElementById("searchengine");
 
 form.addEventListener("keydown", function(event) {
   var logElement = document.createElement('div');
-  logElement.textContent(event.keyCode);
+  logElement.textContent('Key Pressed' + event.key);
   logElement.style.position = 'fixed';
   logElement.style.top = '0';
   logElement.style.right = '0';
